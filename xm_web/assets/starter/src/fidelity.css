@@ -1,0 +1,142 @@
+/* Faithful article profile; own overrides load after dependency themes. */
+.markdown-body, .markdown-body[data-theme="light"] {
+    color-scheme: light;
+    --focus-outlineColor: #0969da;
+    --fgColor-default: #1f2328;
+    --fgColor-muted: #636c76;
+    --fgColor-accent: #0969da;
+    --fgColor-success: #1a7f37;
+    --fgColor-attention: #9a6700;
+    --fgColor-danger: #d1242f;
+    --fgColor-done: #8250df;
+    --bgColor-default: #ffffff;
+    --bgColor-muted: #f6f8fa;
+    --bgColor-neutral-muted: #afb8c133;
+    --bgColor-attention-muted: #fff8c5;
+    --borderColor-default: #d0d7de;
+    --borderColor-muted: #d0d7deb3;
+    --borderColor-neutral-muted: #afb8c133;
+    --borderColor-accent-emphasis: #0969da;
+    --borderColor-success-emphasis: #1a7f37;
+    --borderColor-attention-emphasis: #bf8700;
+    --borderColor-danger-emphasis: #cf222e;
+    --borderColor-done-emphasis: #8250df;
+    --color-prettylights-syntax-comment: #57606a;
+    --color-prettylights-syntax-constant: #0550ae;
+    --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+    --color-prettylights-syntax-entity: #6639ba;
+    --color-prettylights-syntax-storage-modifier-import: #24292f;
+    --color-prettylights-syntax-entity-tag: #0550ae;
+    --color-prettylights-syntax-keyword: #cf222e;
+    --color-prettylights-syntax-string: #0a3069;
+    --color-prettylights-syntax-variable: #953800;
+    --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+    --color-prettylights-syntax-brackethighlighter-angle: #57606a;
+    --color-prettylights-syntax-invalid-illegal-text: #f6f8fa;
+    --color-prettylights-syntax-invalid-illegal-bg: #82071e;
+    --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+    --color-prettylights-syntax-carriage-return-bg: #cf222e;
+    --color-prettylights-syntax-string-regexp: #116329;
+    --color-prettylights-syntax-markup-list: #3b2300;
+    --color-prettylights-syntax-markup-heading: #0550ae;
+    --color-prettylights-syntax-markup-italic: #24292f;
+    --color-prettylights-syntax-markup-bold: #24292f;
+    --color-prettylights-syntax-markup-deleted-text: #82071e;
+    --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+    --color-prettylights-syntax-markup-inserted-text: #116329;
+    --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+    --color-prettylights-syntax-markup-changed-text: #953800;
+    --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+    --color-prettylights-syntax-markup-ignored-text: #eaeef2;
+    --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+    --color-prettylights-syntax-meta-diff-range: #8250df;
+    --color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;
+  color-scheme:light;
+  color:#1f2328; background-color:#fff; font-size:16px; line-height:1.5;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+.reading-layout.is-article { display:block; padding:0; min-height:100vh;
+  background-image:radial-gradient(ellipse at -20% 140%,rgba(102,204,255,.2) 30%,rgba(178,216,232,.3) 50%),radial-gradient(ellipse at 60% 40%,rgba(57,197,187,.3) 10%,rgba(44,70,76,.1) 60%),linear-gradient(-45deg,rgba(102,204,255,.3) -10%,rgba(178,216,232,.4) 80%);
+}
+.is-article .markdown-main {width:72%;margin-left:14%;margin-right:14%;padding:0 3%;background:#fff;min-width:0;min-height:100vh;}
+.markdown-outline {position:fixed;inset:0 auto 0 0;width:14%;height:100%;padding-left:.6%;padding-right:1%;margin:0;overflow-y:auto;max-height:none;}
+.site-rail {position:fixed;right:1vw;top:10vh;margin:0;}
+.markdown-title {color:#409eff;font-size:48px;font-weight:700;text-shadow:2px 2px 4px rgba(102,204,255,.5);margin:15px 0 30px;animation:fade-in 2s ease-in-out;letter-spacing:normal;text-align:center;}
+@keyframes fade-in {from{opacity:0}to{opacity:1}}
+.markdown-body h1{color:#ee0000;font-size:2em;font-weight:600;border-bottom:1px solid #d0d7deb3}
+.markdown-body h2{color:#66ccff;font-size:1.5em;font-weight:600;border-bottom:1px solid #d0d7deb3}
+.markdown-body h3{color:#39c5bb;font-size:1.25em;font-weight:600}
+.markdown-body h4{color:#ecad9e;font-size:1em;font-weight:600}
+.markdown-body h5{color:#1f2328;font-size:.875em;font-weight:600}
+.markdown-body h6{color:#1f2328;font-size:.85em;font-weight:600}
+.markdown-body a{color:#0969da}
+.markdown-body p,.markdown-body ul,.markdown-body ol{margin-bottom:16px}
+.markdown-body img{max-width:100%;height:auto}
+.markdown-body pre{padding:16px;border:0;border-radius:6px;max-width:100%;overflow-x:auto;line-height:1.45}
+
+/* 代码块：浅蓝背景区分正文，圆角，带右上角复制按钮 */
+.markdown-body pre {
+  position: relative;
+  font-size: 0.712em; /* 代码块字体相对于正文的缩小比例 */
+  background-color: rgba(178, 216, 232, 0.05); /* 浅蓝背景，区分正文但不会印刷成大面积黑块 */
+  box-shadow: none; /* 去掉阴影，打印更清晰 */
+}
+
+/* 行内代码 */
+.markdown-body code {
+  color: #333; /* 深灰近黑，更易阅读且打印友好 */
+  background-color: #fffafa; /* 浅灰背景，区分正文但不会印刷成大面积黑块 */
+  box-shadow: none; /* 去掉阴影，打印更清晰 */
+  padding: 0 2px; /* 保留左右少量内边距 */
+  border-radius: 2px; /* 轻微圆角 */
+  border: 1px solid #ddd; /* 细线边框，突出"代码块"感 */
+  font-family: Consolas, 'Courier New', monospace;
+  /* 覆盖 github-markdown-css 的 85% 缩小，行内代码与正文等大 */
+  font-size: 1em;
+  box-sizing: border-box;
+  margin: 0 2px;
+}
+
+/* 代码中渲染的公式：恢复正文色，避免继承语法高亮的注释/字符串配色 */
+.markdown-body code .code-katex {
+  color: #333;
+}
+
+/* 代码块字号是正文的 0.712em，按比例放大后公式与正文中的公式大小一致 */
+.markdown-body pre code .code-katex {
+  font-size: 1.4em;
+}
+
+/* 引言：一个 > 的引言仅为两字符缩进 */
+.markdown-body blockquote {
+  font-style: normal;
+  font-family: inherit;
+  font-size: 1em;
+  /* 文字离左边框的距离 */
+  padding-left: 2em;
+  padding-right: 2em;
+  /* 左边框离页面边的距离 */
+  margin-left: 0;
+  /* 覆盖 github-markdown-css 默认的灰色左竖线：单 > 只保留淡黄背景，不加线 */
+  border-left: none;
+  background-color: rgba(255, 248, 220, 0.2);
+}
+
+/* 嵌套引言 >>：传统引言样式，具有左竖线、左缩进 */
+.markdown-body blockquote blockquote {
+  font-style: normal;
+  font-family: inherit;
+  font-size: 1em;
+  border-left: 4px solid hsl(60, 40%, 70%);
+  padding-left: calc(2ch - 4px);
+  padding-right: 0;
+  margin-left: -4px;
+  border-radius: 0;
+}
+
+
+/* The original code selectors apply to all code, including pre code. */
+.markdown-body pre code {font-size:1em}
+.markdown-body .md-toc {box-shadow:0 4px 18px rgba(44,70,76,.05)}
+@media(max-width:900px){.is-article .markdown-main{width:100%;margin:0;padding:0 6%}.markdown-outline{display:none}}
+@media print{.reading-layout.is-article{background:#fff}.is-article .markdown-main{width:100%;margin:0;padding:0}.site-rail,.markdown-outline{display:none!important}}

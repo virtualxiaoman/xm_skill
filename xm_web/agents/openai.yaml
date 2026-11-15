@@ -1,0 +1,4 @@
+interface:
+  display_name: "xm_web"
+  short_description: "原博客精确视觉与 Markdown 全功能规范，附骨架和迁移组件"
+  default_prompt: "使用 $xm_web 为我创建或改造技术博客，先阅读完整复现规范，严格保留原博客浅色视觉、精确布局及全部 Markdown 阅读交互，并补齐骨架未接线功能。"

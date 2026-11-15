@@ -1,0 +1,95 @@
+{
+  "sourceRoot": "G:\\Projects\\Blog\\azusa_front",
+  "captured": "2026-11-15",
+  "mode": "read-only extraction; original source unchanged",
+  "files": [
+    {
+      "source": "src/utils/markdownDocument.ts",
+      "packaged": "assets/starter/src/utils/markdownDocument.ts",
+      "sourceSha256": "c6e18a24447708d5d76fa0f5f7095068616505a212f88fdf38f56c8fbbd61924",
+      "packagedSha256": "fb42369331697dab15eb26c59d39be6a755945852fac6611167945c144ecc4a6",
+      "modified": true
+    },
+    {
+      "source": "src/utils/markdownRenderCore.ts",
+      "packaged": "assets/starter/src/utils/markdownRenderCore.ts",
+      "sourceSha256": "d67631c8925b2f5f4ae4d2a9c4451b4f631324c6c6fc0c9fe1392304c96ebec1",
+      "packagedSha256": "e027a15c54bbd53e458f3bd250ad05d29dcc4d6e92f0ad0f61250232bed00934",
+      "modified": true
+    },
+    {
+      "source": "src/utils/formulaNormalize.ts",
+      "packaged": "assets/starter/src/utils/formulaNormalize.ts",
+      "sourceSha256": "ef7f6057535ebe53d42dc67a91f7fb1b71c18e0e945f06decfcce0eb554fbba6",
+      "packagedSha256": "ef7f6057535ebe53d42dc67a91f7fb1b71c18e0e945f06decfcce0eb554fbba6",
+      "modified": false
+    },
+    {
+      "source": "src/utils/markdownToc.ts",
+      "packaged": "assets/starter/src/utils/markdownToc.ts",
+      "sourceSha256": "e0c548d06046e56bf70448cc0f51074f1c6760359efa9b785cde4bcb9053c7d5",
+      "packagedSha256": "e0c548d06046e56bf70448cc0f51074f1c6760359efa9b785cde4bcb9053c7d5",
+      "modified": false
+    },
+    {
+      "source": "src/utils/mermaidRender.ts",
+      "packaged": "assets/starter/src/utils/mermaidRender.ts",
+      "sourceSha256": "73cd4c8299b6394cb6625ca9ee23b905cabe9ebf4aa1048f9d504afb1d75cbef",
+      "packagedSha256": "73cd4c8299b6394cb6625ca9ee23b905cabe9ebf4aa1048f9d504afb1d75cbef",
+      "modified": false
+    },
+    {
+      "source": "src/utils/bracketHighlight.ts",
+      "packaged": "assets/starter/src/utils/bracketHighlight.ts",
+      "sourceSha256": "5a54fef9c15c63fbf7d00bc52ddfe658e6bdf29e6cd222e641fbc5c375aaf8c4",
+      "packagedSha256": "5a54fef9c15c63fbf7d00bc52ddfe658e6bdf29e6cd222e641fbc5c375aaf8c4",
+      "modified": false
+    },
+    {
+      "source": "src/utils/formulaCopy.ts",
+      "packaged": "assets/starter/src/utils/formulaCopy.ts",
+      "sourceSha256": "7ee82cfc8f8373c6e8001f42ce99625fbf6d2693a9b65e4758a3f06e158ed06d",
+      "packagedSha256": "7ee82cfc8f8373c6e8001f42ce99625fbf6d2693a9b65e4758a3f06e158ed06d",
+      "modified": false
+    },
+    {
+      "source": "src/utils/codeCopy.ts",
+      "packaged": "assets/starter/src/utils/codeCopy.ts",
+      "sourceSha256": "0f445421a3e59211e6b3d6839a0ea332178b6a931c9402032325c905f57da855",
+      "packagedSha256": "0f445421a3e59211e6b3d6839a0ea332178b6a931c9402032325c905f57da855",
+      "modified": false
+    },
+    {
+      "source": "src/utils/clipboard.ts",
+      "packaged": "assets/starter/src/utils/clipboard.ts",
+      "sourceSha256": "849b1a4b565a8acb54f2e37079d11d615217a5d91614df7a116e2f9d7ff67a54",
+      "packagedSha256": "849b1a4b565a8acb54f2e37079d11d615217a5d91614df7a116e2f9d7ff67a54",
+      "modified": false
+    },
+    {
+      "source": "src/utils/stableScroll.ts",
+      "packaged": "assets/starter/src/utils/stableScroll.ts",
+      "sourceSha256": "1a0f44faba0fd5bd90b0cd12e7c823957991fc887325b1cd1a2cd732fec032f5",
+      "packagedSha256": "1a0f44faba0fd5bd90b0cd12e7c823957991fc887325b1cd1a2cd732fec032f5",
+      "modified": false
+    },
+    {
+      "source": "src/style.css",
+      "packaged": "assets/starter/src/markdown-enhancements.css",
+      "sourceSha256": "268709fd43060a6f1dabf5c7778317283c4ba00a288ce80c1e6ab55a929c9618",
+      "packagedSha256": "e9e403aa4b65bf9146ae3f9388702b37e4d76459f39d3de5d583706bea805561",
+      "modified": true
+    },
+    {
+      "source": "src/utils/markdownSource.ts",
+      "packaged": "assets/starter/src/utils/markdownSource.ts",
+      "sourceSha256": "87dda5da6fa178858e0a0ba2e9d97aa4cde15266daaf61fcde8cb711b772daf8",
+      "packagedSha256": "87dda5da6fa178858e0a0ba2e9d97aa4cde15266daaf61fcde8cb711b772daf8",
+      "modified": false
+    }
+  ],
+  "modifications": {
+    "markdownRenderCore.ts": "DOMPurify before first temporary DOM insertion",
+    "markdownDocument.ts": "opt-in codeFormulas, default false"
+  }
+}

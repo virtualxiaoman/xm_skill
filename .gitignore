@@ -1,0 +1,16 @@
+# Local dependencies and generated output
+node_modules/
+dist/
+__pycache__/
+*.py[cod]
+.venv/
+
+# Local credentials and editor/OS metadata
+.env
+.env.*
+!.env.example
+*.local
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
