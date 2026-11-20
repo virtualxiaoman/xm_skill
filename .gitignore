@@ -14,3 +14,6 @@ __pycache__/
 Thumbs.db
 .vscode/
 .idea/
+
+# Private paper figures and local reference table
+/drawio/examples/

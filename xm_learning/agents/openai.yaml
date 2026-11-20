@@ -1,4 +1,0 @@
-interface:
-  display_name: "xm_learning"
-  short_description: "Build learning sites with xm_note and xm_web"
-  default_prompt: "使用 $xm_learning 将学习材料或指定主题构建为互通的学习、测验和答案复习网站；自动读取并应用 $xm_note 的讲解风格与 $xm_web 的视觉和 Markdown 规范。"

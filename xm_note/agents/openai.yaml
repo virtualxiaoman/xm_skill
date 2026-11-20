@@ -1,4 +1,0 @@
-interface:
-  display_name: "xm_note"
-  short_description: "准确专业地讲知识，沿用小满的问题驱动笔记风格，结合公式、维度与例子"
-  default_prompt: "请使用 $xm_note，准确、专业地讲解以下内容，并采用我的《深度学习.md》笔记风格："
