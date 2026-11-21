@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | 教学讲解、答案推理、可视化注释 | [xm-note](../../xm-note/SKILL.md) 的规则及内嵌示例 | 直觉、符号、推导、shape、具体例子与连贯表达 |
 | 网站或阅读界面 | [xm-web](../../xm-web/SKILL.md)；其 [requirements](../../xm-web/references/requirements.md)、[design-system](../../xm-web/references/design-system.md)、[implementation-status](../../xm-web/references/implementation-status.md)、[acceptance](../../xm-web/references/acceptance.md) | 浅色视觉、完整阅读交互、实际覆盖与验收 |
-| 复杂教学示意图 | [drawio](../../drawio/SKILL.md) | 可编辑的源图和适合在讲解或解析中嵌入的 PNG |
+| 复杂教学示意图 | [drawio](../../../02-软件使用/绘图与内容制作/drawio/SKILL.md) | 可编辑的源图和适合在讲解或解析中嵌入的 PNG |
 | Markdown、公式、图表、复制 | xm-web 的 [markdown-pipeline](../../xm-web/references/markdown-pipeline.md)；迁移组件时另读 [ADAPTATION](../../xm-web/assets/reference-components/ADAPTATION.md) | 统一渲染与源码保真 |
 
 xm-learning 负责学习结构、证据、题目和解析质量、可视化准确性及三界面联动。以当前实际安装的依赖入口定位参考资料；xm-note 的讲解示例直接在其 SKILL.md 中，不要求不存在的额外文件。用户指定的范围、框架与偏好优先，事实准确性优先于风格。

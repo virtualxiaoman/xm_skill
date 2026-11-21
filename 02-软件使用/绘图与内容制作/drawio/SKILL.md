@@ -43,12 +43,18 @@ description: 使用本机 draw.io 创建或修改论文流程图、方法框架�
 
 ## 导出 PNG
 
-从项目根目录运行以下命令。先创建图件目录并将源文件保存为其中的 `figure01.drawio`，再用 [scripts/export-png.ps1](scripts/export-png.ps1) 导出。
+从项目根目录运行以下命令。先创建图件目录并将源文件保存为其中的 `figure01.drawio`，再用 [scripts/export-png.ps1](scripts/export-png.ps1) 导出。如果单独安装了此技能，请将 `$drawioSkillDir` 设为当前 `SKILL.md` 所在目录。
 
 ```powershell
 $drawioDir = Join-Path (Get-Location) 'assets\drawio'
 $null = [System.IO.Directory]::CreateDirectory($drawioDir)
-$drawioScript = Join-Path $HOME '.codex\skills\drawio\scripts\export-png.ps1'
+$skillsRoot = if ($env:CODEX_HOME) {
+    Join-Path $env:CODEX_HOME 'skills'
+} else {
+    Join-Path ([Environment]::GetFolderPath('UserProfile')) '.codex\skills'
+}
+$drawioSkillDir = Join-Path $skillsRoot '02-软件使用\绘图与内容制作\drawio'
+$drawioScript = Join-Path $drawioSkillDir 'scripts\export-png.ps1'
 $drawioExe = 'C:\Program Files\draw.io\draw.io.exe' # 改为本机安装路径
 # 将源文件保存到 $drawioDir 下，再运行导出命令。
 & $drawioScript -SourcePath (Join-Path $drawioDir 'figure01.drawio') -DrawioExe $drawioExe
